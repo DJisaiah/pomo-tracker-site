@@ -1,1 +1,1 @@
-import "./components/PomoNavbar.ts";
+import "./components/composite/PomoNavbar.ts";

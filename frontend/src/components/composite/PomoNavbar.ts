@@ -8,10 +8,11 @@ export class PomoNavbar extends HTMLElement {
     const navbar = document.createElement("nav");
     const pageListing = document.createElement("ol");
     const options = {
-      Home: "link",
-      "Submit an Issue": "link",
-      About: "link",
+      Home: "Home",
+      "Submit an Issue": "Issues",
+      About: "About",
     };
+
     for (const [pageTitle, pageLink] of Object.entries(options)) {
       const page = document.createElement("li");
       pageListing.appendChild(page);
@@ -47,7 +48,7 @@ export class PomoNavbar extends HTMLElement {
             font-weight: 600;
         }
         ol:hover li a {
-            transform: scale(0.9);
+            /*transform: scale(0.9);*/
         }
         ol:hover li a:hover {
             /*text-decoration: #388e3c wavy underline; */
